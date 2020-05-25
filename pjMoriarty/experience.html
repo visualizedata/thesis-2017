@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W9</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<!-- <body background="imgs/Flatiron2.jpg"> -->
+<body bgcolor="#111112">
+    <ul>
+      <li><a href="index.html">w9 home</a></li>
+      <li><a href="problem.html">the problem</a></li>
+      <li><a href="big-numbers.html">big numbers</a></li>
+      <li><a class="active" href="experience.html">immerse</a></li>
+      <li><a href="map.html">view map</a></li>
+      <li><a href="demo.html">view demo</a></li>
+    </ul>
+    <p class="blurb">Inspiration for the wave9 model includes various experiencially immersive works that bring maintain physical coherence between micro and macro elements of the visualization.</p>
+
+    <div class="content">
+    <div class="w3-container">
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="imgs/slideshowX/slide01.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Located in Washington, D.C., the Vietnam Veterans Memorial includes the names of over 58,000 servicemen and women who gave their lives in service in the Vietnam Conflict.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="imgs/slideshowX/slide02.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    A database containing the addresses of every Web site in the world Lisa Jevbratt's 1:1 also includes interfaces through which to view and use the database. The interfaces/visualizations are "not maps of the web but are, in some sense, the web". 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="imgs/slideshowX/slide03.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    A voyage across the US-Mexico border, stitched together from 200,000 satellite images, Josh Begley's 'Googs Luck with the Wall,' "was about looking. It was about the sheer desire to understand the visual landscape that we are talking about when we are talking about the southern border of the United States."
+  </div>
+</div>
+
+<!-- <div class="w3-display-container mySlides">
+  <img src="imgs/slideshowX/slide04.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Stan's Cafe's 'Of All The People In All The World' uses grains of rice to bring formally abstract statistics to startling and powerful life. Each grain of rice = one person and you are invited to compare the one grain that is you to the millions that are not.
+  </div>
+</div> -->
+
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- //////////////////////////////? -->
+<!--     <div class="content">
+      <div class="relative">
+        <img class="mySlides" src="imgs/slideshowX/slide01.jpg" style="width:100%">
+        <img class="mySlides" src="imgs/slideshowX/slide02.jpg" style="width:100%">
+        <img class="mySlides" src="imgs/slideshowX/slide03.jpg" style="width:100%">
+       </div>
+       <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+       <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button> -->
+
+        <!-- <img src="imgs/spencer.jpg" style="width:100%"> -->
+<!--         <p>Experiential Immersion</p>
+
+    </div> -->
+<!--     <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+</script> -->
+
+
+ 
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,385 @@
+[
+   {
+     "distance": {
+       "text": "12 m",
+       "value": 12
+     },
+     "duration": {
+       "text": "1 min",
+       "value": 3
+     },
+     "end_location": {
+       "lat": 28.6854141,
+       "lng": 77.19725099999999
+     },
+     "html_instructions": "Head <b>southeast</b>",
+     "polyline": {
+       "points": "msanDkqdvMRM"
+     },
+     "start_location": {
+       "lat": 28.6855059,
+       "lng": 77.1971772
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "58 m",
+       "value": 58
+     },
+     "duration": {
+       "text": "1 min",
+       "value": 15
+     },
+     "end_location": {
+       "lat": 28.6850418,
+       "lng": 77.19716099999999
+     },
+     "html_instructions": "Turn <b>right</b> toward <b>Karnal Rd</b>",
+     "maneuver": "turn-right",
+     "polyline": {
+       "points": "yranDyqdvMNZFN@@@@@?@?@?@??A@?b@["
+     },
+     "start_location": {
+       "lat": 28.6854141,
+       "lng": 77.19725099999999
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "93 m",
+       "value": 93
+     },
+     "duration": {
+       "text": "1 min",
+       "value": 31
+     },
+     "end_location": {
+       "lat": 28.6845139,
+       "lng": 77.1964258
+     },
+     "html_instructions": "Turn <b>right</b> toward <b>Karnal Rd</b>",
+     "maneuver": "turn-right",
+     "polyline": {
+       "points": "opanDgqdvMNRJLZb@HJJPZl@"
+     },
+     "start_location": {
+       "lat": 28.6850418,
+       "lng": 77.19716099999999
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "0.4 km",
+       "value": 375
+     },
+     "duration": {
+       "text": "2 mins",
+       "value": 129
+     },
+     "end_location": {
+       "lat": 28.6816593,
+       "lng": 77.19843969999999
+     },
+     "html_instructions": "Turn <b>left</b> onto <b>Karnal Rd</b><div style=\"font-size:0.9em\">Pass by Punjab National Bank (on the left)</div>",
+     "maneuver": "turn-left",
+     "polyline": {
+       "points": "emanDuldvMBAvAm@r@Ux@e@jA{@~AmAhA}@n@g@VUp@_@"
+     },
+     "start_location": {
+       "lat": 28.6845139,
+       "lng": 77.1964258
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "0.4 km",
+       "value": 386
+     },
+     "duration": {
+       "text": "2 mins",
+       "value": 95
+     },
+     "end_location": {
+       "lat": 28.6796351,
+       "lng": 77.19533869999999
+     },
+     "html_instructions": "Turn <b>right</b> onto <b>Inder Chandra Shastri Marg</b><div style=\"font-size:0.9em\">Pass by Parmarth Mission Hospital (on the left)</div>",
+     "maneuver": "turn-right",
+     "polyline": {
+       "points": "k{`nDgydvMNILTTb@FLLTnChF?@rAfC\\n@BFb@x@DFXh@"
+     },
+     "start_location": {
+       "lat": 28.6816593,
+       "lng": 77.19843969999999
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "0.7 km",
+       "value": 747
+     },
+     "duration": {
+       "text": "2 mins",
+       "value": 101
+     },
+     "end_location": {
+       "lat": 28.6777289,
+       "lng": 77.1889788
+     },
+     "html_instructions": "At <b>Nangia Park Chowk</b>, take the <b>2nd</b> exit and stay on <b>Inder Chandra Shastri Marg</b><div style=\"font-size:0.9em\">Pass by the park (on the right)</div>",
+     "maneuver": "roundabout-left",
+     "polyline": {
+       "points": "wn`nD{edvMPEFCRCNAJ@N@HBLFJFHHJJDFJ`@@N@P?LANANCJELELGJIHKJIJKFQFP|@Jj@BPNjAh@vCvAnGZ~ANn@j@nCDTLh@Lh@"
+     },
+     "start_location": {
+       "lat": 28.6796351,
+       "lng": 77.19533869999999
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "1.8 km",
+       "value": 1812
+     },
+     "duration": {
+       "text": "6 mins",
+       "value": 352
+     },
+     "end_location": {
+       "lat": 28.6640142,
+       "lng": 77.1806692
+     },
+     "html_instructions": "Turn <b>left</b> onto <b>Swami Narayan Marg</b><div style=\"font-size:0.9em\">Pass by Gurudwara Nanaksar That (on the left)</div>",
+     "maneuver": "turn-left",
+     "polyline": {
+       "points": "yb`nDc~bvMXZBBFBB@F@F?TA\\Uf@Yf@U`@K\\GRARCJ@LBRF\\Pj@ZB@TNnAr@\\Rp@`@lAp@z@d@XPZZPVNVFFJNnCnDrBpCnAlBv@jAx@jAn@r@n@l@~@b@lAh@`@Rt@VxD~ApI|CLDLD@@@?FB@?BB@?B@@?TJTHLFXLx@XnBp@|@^zBx@l@RZHXF"
+     },
+     "start_location": {
+       "lat": 28.6777289,
+       "lng": 77.1889788
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "2.7 km",
+       "value": 2706
+     },
+     "duration": {
+       "text": "8 mins",
+       "value": 507
+     },
+     "end_location": {
+       "lat": 28.6524485,
+       "lng": 77.2047132
+     },
+     "html_instructions": "Turn <b>left</b> onto <b>Guru Gobind Singh Marg</b>/<b>New Rohtak Rd</b><div style=\"font-size:0.9em\">Pass by Krishna Diagnostic Centre (on the left)</div>",
+     "maneuver": "turn-left",
+     "polyline": {
+       "points": "am}mDejavMJARELELILGDEDEDGLM?AVw@@Cp@iANQ@?d@k@@Ab@c@tAwALQBGXw@\\gAh@uB|@wDDOv@cDh@yBDS^aBJg@XmAH_@ZyAV_APi@f@yBt@gDd@kB\\yANk@Pw@XgAFWNi@Nm@DINm@Ri@BInB_EFOdAeChAmCn@wA`@}@@Cl@sABG@E@C`@cA`@iA`@kA`@iAHUFOZy@r@kBpAgD@C`AiBh@oAz@mBhBaEDKt@kBr@aBXq@N[j@wAJa@"
+     },
+     "start_location": {
+       "lat": 28.6640142,
+       "lng": 77.1806692
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "0.7 km",
+       "value": 662
+     },
+     "duration": {
+       "text": "2 mins",
+       "value": 121
+     },
+     "end_location": {
+       "lat": 28.6466653,
+       "lng": 77.2054797
+     },
+     "html_instructions": "Turn <b>right</b> onto <b>Rani Jhansi Rd</b><div style=\"font-size:0.9em\">Pass by the park (on the left)</div>",
+     "maneuver": "turn-right",
+     "polyline": {
+       "points": "yd{mDm`fvM@YPC|BWLC|AMxAM`@CtBQvDa@bC[D?p@Gb@CXCZ?p@?hAJhAR"
+     },
+     "start_location": {
+       "lat": 28.6524485,
+       "lng": 77.2047132
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "0.4 km",
+       "value": 431
+     },
+     "duration": {
+       "text": "1 min",
+       "value": 76
+     },
+     "end_location": {
+       "lat": 28.6432427,
+       "lng": 77.2036276
+     },
+     "html_instructions": "At the roundabout, take the <b>2nd</b> exit and stay on <b>Rani Jhansi Rd</b>",
+     "maneuver": "roundabout-left",
+     "polyline": {
+       "points": "u`zmDgefvM@?@A@?@A@?@?@A@?@?@?B?@@@?B?@@B@@@@@@@@@@@?B@@?@@B@BVLZRn@`@zDxBTL~A|@fAf@vAb@b@B\\A"
+     },
+     "start_location": {
+       "lat": 28.6466653,
+       "lng": 77.2054797
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "0.6 km",
+       "value": 582
+     },
+     "duration": {
+       "text": "2 mins",
+       "value": 92
+     },
+     "end_location": {
+       "lat": 28.6398177,
+       "lng": 77.20773489999999
+     },
+     "html_instructions": "At <b>Veer Chand Singh Garhwali Chowk</b>, take the <b>1st</b> exit onto <b>Panchkuian Marg</b><div style=\"font-size:0.9em\">Pass by Delhi Heart And Lung Institute (on the left)</div>",
+     "maneuver": "roundabout-left",
+     "polyline": {
+       "points": "gkymDuyevMDGBCDCDCFCD?FAD?F@D@FBDBDDJOh@K\\Of@_@dAaA@Av@aAj@_A`@{@DKnAiCzA_DhAeCPa@"
+     },
+     "start_location": {
+       "lat": 28.6432427,
+       "lng": 77.2036276
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "0.7 km",
+       "value": 748
+     },
+     "duration": {
+       "text": "2 mins",
+       "value": 128
+     },
+     "end_location": {
+       "lat": 28.6339311,
+       "lng": 77.20561699999999
+     },
+     "html_instructions": "Turn <b>right</b> onto <b>RamaKrishna Ashram Marg</b>",
+     "maneuver": "turn-right",
+     "polyline": {
+       "points": "{uxmDisfvMTk@JUb@Zb@^RFF@H@\\Cd@Kx@SDAL@L@NDLFNH`@V@@\\R`C`B~CtBz@h@|B~AFDNDNBN@NBVBV@ZBr@?tAE"
+     },
+     "start_location": {
+       "lat": 28.6398177,
+       "lng": 77.20773489999999
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "0.7 km",
+       "value": 708
+     },
+     "duration": {
+       "text": "2 mins",
+       "value": 99
+     },
+     "end_location": {
+       "lat": 28.6278478,
+       "lng": 77.20519059999999
+     },
+     "html_instructions": "At <b>Gole Market Chowk</b>, take the <b>2nd</b> exit onto <b>Bhai Vir Singh Marg</b><div style=\"font-size:0.9em\">Pass by Shankar Automobiles (on the left in 350&nbsp;m)</div>",
+     "maneuver": "roundabout-left",
+     "polyline": {
+       "points": "aqwmDcffvM?A?A?A@A?A?A@ABI@CBCBCBABCBADAB?DAB?F@B@B@B@BBBBBBBB@B@D@D?D@B?B?B?Bt@B`@@tABlENdAD`GPbEJfDFp@@"
+     },
+     "start_location": {
+       "lat": 28.6339311,
+       "lng": 77.20561699999999
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "0.1 km",
+       "value": 102
+     },
+     "duration": {
+       "text": "1 min",
+       "value": 14
+     },
+     "end_location": {
+       "lat": 28.6274026,
+       "lng": 77.2061023
+     },
+     "html_instructions": "Turn <b>left</b> onto <b>Kali Bari Marg</b>",
+     "maneuver": "turn-left",
+     "polyline": {
+       "points": "akvmDmcfvMv@gBJWFSLa@"
+     },
+     "start_location": {
+       "lat": 28.6278478,
+       "lng": 77.20519059999999
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "1.2 km",
+       "value": 1158
+     },
+     "duration": {
+       "text": "4 mins",
+       "value": 218
+     },
+     "end_location": {
+       "lat": 28.6315545,
+       "lng": 77.2166793
+     },
+     "html_instructions": "At <b>Gol Dak Khana Roundabout</b>, take the <b>2nd</b> exit onto <b>Baba Kharak Singh Marg</b><div style=\"font-size:0.9em\">Pass by Rajiv Gandhi Handicrafts Bhawan (on the left in 750&nbsp;m)</div>",
+     "maneuver": "roundabout-left",
+     "polyline": {
+       "points": "ghvmDcifvMIMGKGKEMCOCOAOAMBM@M@MDKDMDKFIFIDY?QAKCMEMa@mA{@cCIUU{@i@_B_AoCWu@CIqByFmEqM{@gC_AiCw@qB_@y@KUQe@"
+     },
+     "start_location": {
+       "lat": 28.6274026,
+       "lng": 77.2061023
+     },
+     "travel_mode": "DRIVING"
+   },
+   {
+     "distance": {
+       "text": "63 m",
+       "value": 63
+     },
+     "duration": {
+       "text": "1 min",
+       "value": 32
+     },
+     "end_location": {
+       "lat": 28.6321085,
+       "lng": 77.21654850000002
+     },
+     "html_instructions": "Turn <b>left</b> onto <b>Connaught Circus</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+     "maneuver": "turn-left",
+     "polyline": {
+       "points": "ebwmDgkhvMoBX"
+     },
+     "start_location": {
+       "lat": 28.6315545,
+       "lng": 77.2166793
+     },
+     "travel_mode": "DRIVING"
+   }
+ ]

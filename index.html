@@ -17,7 +17,7 @@
     var usePreview = true;
 
     $(document).ready(function() {
-      
+
       // images
       $("div .project").each(function() {
         if ($(this).attr('href') !== undefined) {
@@ -59,24 +59,24 @@
           $(this).prepend("<a id='" + i + "'>");
         }
       });
-      
+
       // check for touch screens
       var hasTouch = window.matchMedia('(pointer: coarse)').matches;
       if (hasTouch) {
         $(".no-touch").hide();
       }
-      
+
       // activate tooltip
       $('[data-toggle="tooltip"]').tooltip();
 
 	    $(window).scroll(function(){
 	  			$( "div#cover:visible" ).css( "display", "inline" ).fadeOut( "slow" );
 	    });
-	    
+
 	    $( "div#cover:visible" ).click(function() {
 	      $(this).css( "display", "inline" ).fadeOut( "slow" );
 	    });
-	    
+
 	    if( (new Date().getTime() < new Date('May 18, 2017 18:30:00').getTime()))
       {
         $( "div#cover" ).css('visibility', 'visible');
@@ -136,7 +136,7 @@
     <div class="font-width-3 col-xs-6 text-right">
       <a href="https://visualizedata.github.io/thesis-2016/">2016</a>
     </div>
-        
+
     <!--INDEX-->
     <div class="col-sm-11 col-sm-offset-1">
       <ul id="index">
@@ -182,7 +182,7 @@
     </div>
 
     <a id="aseem"></a>
-    <div href="http://ec2-34-223-227-182.us-west-2.compute.amazonaws.com:8383/presentation/1.html" img-src="https://github.com/agaase/msdv-thesis/raw/master/visualization/preview.png" class="project col-md-12 no-touch">
+    <div href="aseemAgarwal/index.html" img-src="preview/aseemAgarwal.png" class="project col-md-12 no-touch">
       <p class=" col-md-2">
         <span class="title">How is Delhi Slowing Down?</span>
       </p>
@@ -202,14 +202,14 @@
     </div>
 
     <a id="nancy"></a>
-    <div href="https://nancyzhao888.github.io/thesis/work/broadway/" img-src="https://github.com/nancyzhao888/thesis/raw/master/work/broadway/preview.png" class="project col-md-12">
+    <div href="nancyZhao/index.html" img-src="preview/nancyZhao.png" class="project col-md-12">
       <p class=" col-md-2">
         <span class="title">The International Afterlife of Broadway Musicals</span>
       </p>
       <p class="col-md-9">
         Broadway musical theatre is not a ephemeral and New York local phenomenon. It is a powerful brand, and a form of cultural export, which through international touring and international productions, has created a global network of audience. However, while eyes and ears are on the 40 theatres on the Great White Way, the theatre industry has hardly examined this mechanism of international business and Broadway’s cultural impact.
       </p>
-    </div> 
+    </div>
 
     <!--PROJECT-->
 
@@ -222,7 +222,7 @@
     </div>
 
     <a id="sambhav"></a>
-    <div href="https://jainsambhav91.github.io/thesis/work/finalViz/" img-src="preview/sambhavJain.png" class="project col-md-12">
+    <div href="sambhavJain/index.html" img-src="preview/sambhavJain.png" class="project col-md-12">
       <p class=" col-md-2">
         <span class="title">Visualizing Law: Understanding the sex offender registry laws and their collateral consequences</span>
       </p>
@@ -262,7 +262,7 @@
     </div>
 
     <a id="pj"></a>
-    <div href="http://moriartp.github.io/projects/wave_9/" img-src="https://raw.githubusercontent.com/moriartp/ms2/master/Images/preview.png" class="project col-md-12">
+    <div href="pjMoriarty/index.html" img-src="preview/pjMoriarty.png" class="project col-md-12">
       <p class=" col-md-2">
         <span class="title">Wave9: An immersive augmented reality model of the solar system</span>
       </p>
@@ -282,7 +282,7 @@
     </div>
 
     <a id="joshua"></a>
-    <div href="https://thesis-app-neuralism.c9users.io/index.html" img-src="https://raw.githubusercontent.com/neuralism/thesis-app/master/preview.png" class="project col-md-12">
+    <div href="joshuaLee/app.html" img-src="preview/joshuaLee.png" class="project col-md-12">
       <p class=" col-md-2">
         <span class="title">Visualizing Player Interactions in Online Games</span>
       </p>
@@ -328,7 +328,7 @@
 
           <p><a href="http://www.newschool.edu/parsons/ms-data-visualization/">MS Data Visualization 2017</a></p>
 
-          
+
           <a href="https://github.com/svickars/thesis">Sam Vickars</a>
           <br /> <a href="https://github.com/agaase/msdv-thesis">Aseem Agarwal</a>
           <br /> <a href="https://github.com/nancyzhao888/thesis">Nancy Zhao</a>
@@ -353,7 +353,7 @@
 
           <p><a href="http://www.newschool.edu/parsons/ms-data-visualization/">Program Contact</a></p>
           <a href="http://www.newschool.edu/parsons/faculty.aspx?id=4d6a-5577-4d6a-4d7a">Aaron Hill, Assist. Prof.</a>
-          <br />Program Director, Data Visualization 
+          <br />Program Director, Data Visualization
           <br /> <a href="http://www.newschool.edu/parsons/art-media-technology-school-amt/">Art, Media, and Technology</a>
 
         </div>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How is Delhi slowing down?</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="mapbox-gl.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+
+<div class="outer-cont container-fluid">
+  <div class='row inner-cont'>
+  		<div class="col-md-12" id='map'></div>
+      </div>
+  </div>
+</div>
+<div class='mapFilters'>
+  <div class='mapFilter selected roads'>Roads</div>
+  <div class='mapFilter landuse'>Landuse</div>
+</div>
+<div class=" menu">
+    <h3>How is Delhi slowing down?</h3>
+    <svg></svg>
+    <div class='filters'>
+      <div class='head'>TYPE OF AREA</div>
+      <div class='filter'><div class='checkbox'></div><div class='labelFilter'>Commercial</div></div>
+      <div class='filter'><div class='checkbox'></div><div class='labelFilter'>Residential</div></div>
+      <div class='filter'><div class='checkbox'></div><div class='labelFilter'>School</div></div>
+      <div class='filter'><div class='checkbox'></div><div class='labelFilter'>Railway</div></div>
+      <div class='filter'><div class='checkbox'></div><div class='labelFilter'>Hospital</div></div>
+
+    </div>
+</div>
+<script type="text/javascript" src="mapbox/mapbox-gl.js"></script>
+<script type="text/javascript" src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/queries.js"></script>
+<script type="text/javascript" src='js/main.js'></script>
+</body>
+</html>

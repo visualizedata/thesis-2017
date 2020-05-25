@@ -1,0 +1,13 @@
+name,radius,distance, diameter
+sun,0,0,66
+Jupiter,10.97,0,6.628
+Saturn,9.14,0,5.524
+Uranus,3.98,0,2.405
+Neptune,3.86,0,2.335
+Earth,1,0,0.6041
+Venus,0.950,0,0.5737
+Mars,0.532,0,0.3214
+Mercury,0.383,0,0.2313
+Pluto,0.181,0,0.1125
+
+

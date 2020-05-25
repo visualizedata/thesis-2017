@@ -1,0 +1,164 @@
+body {
+  background: #fefefe;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-color: #333;
+  margin-top: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+}
+
+#container {
+  position: relative;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#header-strip {
+  width: 100%;
+  background-color: #333;
+}
+
+#header {
+  background-color: #333;
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 27px;
+  padding-bottom: 30px;
+  height: 179px;
+}
+#header #headline {
+  width: 480px;
+  float: left;
+}
+#header #intro {
+  color: #999;
+  width: 480px;
+  float: left;
+}
+#header .title-img {
+  margin-bottom: 29px;
+}
+
+.btn {
+  border: 0px;
+  background-color: #757575;
+  padding: 7px 12px 8px 12px;
+  color: #eeeeee;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #424242;
+}
+
+#main .section {
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: 31px;
+}
+#main .title {
+  font-size: 1.8em;
+  font-weight: 600;
+  border-top: 3px solid black;
+}
+#main .player-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-top: 1px solid gray;
+  display: block;
+  clear: left;
+  margin-top: 30px;
+  padding-top: 3px;
+}
+#main .graph-descriptor {
+  font-family: "Roboto Mono", monospace;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  display: block;
+  clear: left;
+}
+#main .graph-descriptor.circle {
+  margin-top: 20px;
+  border-top: 1px dotted lightgray;
+  padding-top: 4px;
+  margin-bottom: 15px;
+}
+#main .week {
+  font-family: "Roboto Mono", monospace;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+#main .mono-bold {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
+#main .graph {
+  height: 30px;
+  background-color: #f4f4f4;
+  display: block;
+  clear: left;
+  overflow: hidden;
+}
+#main .graph .unit {
+  float: left;
+  height: 30px;
+  /* Move the outline 10px away from the border */
+  margin-left: 1px;
+}
+#main .report {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #999;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+}
+#main #money,
+#main #money .title,
+#main #money .player-name,
+#main #money-dates,
+#main #money-dates .title,
+#main #money-dates .player-name {
+  color: #00897B;
+  border-color: #00897B;
+}
+#main #messages,
+#main #messages .title,
+#main #messages .player-name,
+#main #messages-dates,
+#main #messages-dates .title,
+#main #messages-dates .player-name {
+  color: #0D47A1;
+  border-color: #0D47A1;
+}
+#main #damage,
+#main #damage .title,
+#main #damage .player-name,
+#main #damage-dates,
+#main #damage-dates .title,
+#main #damage-dates .player-name {
+  color: #EF5350;
+  border-color: #EF5350;
+}
+
+.spacer {
+  height: 3px;
+}
+
+#footer {
+  margin-bottom: 100px;
+}
+
+.tippy-tooltip.aion-theme {
+  font-size: 1em;
+  font-family: "Roboto Mono", monospace;
+}
+
+/*# sourceMappingURL=main.css.map */

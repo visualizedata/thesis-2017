@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W9</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<!-- <body background="imgs/Flatiron2.jpg"> -->
+<body bgcolor="#111112">
+    <ul>
+      <li><a href="index.html">w9 home</a></li>
+      <li><a class="active" href="problem.html">the problem</a></li>
+      <li><a href="big-numbers.html">big numbers</a></li>
+      <li><a href="experience.html">immerse</a></li>
+      <li><a href="map.html">view map</a></li>
+      <li><a href="demo.html">view demo</a></li>
+    </ul>
+    <div class="content">
+<!--       <div class="relative">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c01.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c02.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c03.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c04.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c05.png" style="width:25%">
+        <img class="mySlides" src="imgs/slideshow/Screenshot_c06.png" style="width:25%">
+      </div> -->
+        <p><i class="quote">“We can easily visualize five things. We can even roughly visualize approximately 100 things — by, say, picturing a large crowd gathered. But when we’re talking about millions of things our ability to visualize completely fails.”</p></i><p></p><p style="text-align: right;">— Spencer Greenberg, mathematician</p>
+
+    </div>
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+</script>
+
+
+ 
+
+
+
+
+
+
+
+</body>
+</html>

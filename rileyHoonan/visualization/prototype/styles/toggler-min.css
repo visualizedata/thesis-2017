@@ -1,0 +1,125 @@
+/* TOGGLE BOILERPLATE */
+.tgl {
+  display: none; }
+
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+  box-sizing: border-box; }
+
+.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection {
+  background: none; }
+
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+  background: none; }
+
+.tgl + .tgl-btn {
+  float: right;
+  outline: 0;
+  display: block;
+  width: 2.5em;
+  height: 1.25em;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  top: 20%;
+  width: 30%;
+  height: 60%; }
+
+.tgl + .tgl-btn:after {
+  left: 10%; }
+
+.tgl + .tgl-btn:before {
+  display: none; }
+
+.tgl:checked + .tgl-btn:after {
+  left: 60%; }
+
+.tgl-light + .tgl-btn {
+  background: #D4D0C7;
+  border-radius: 1em;
+  /*padding: 2px;*/
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease; }
+
+.tgl-light + .tgl-btn:after {
+  border-radius: 50%;
+  background: #F5F4F0;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
+
+/* CUSTOM TOGGLES */
+div.toggle {
+  width: 100%;
+  padding: .75em 0 .75em 0;
+  border-top: 1px solid #D4D0C7;
+  text-transform: capitalize; }
+
+div.toggle.clicked label.tgl-purp {
+  background: #8C2E60; }
+
+div.toggle.clicked label.tgl-oran {
+  background: #E84E00; }
+
+div.toggle.clicked label.tgl-tgol {
+  background: #CE8A00; }
+
+div.toggle.clicked label.tgl-brow {
+  background: #955008; }
+
+div.toggle.clicked label.tgl-blue {
+  background: #2F67A8; }
+
+div.toggle.clicked label.tgl-lblu {
+  background: #4E97BA; }
+
+div.toggle.clicked label.tgl-ttea {
+  background: #089576; }
+
+div.toggle.clicked label.tgl-gree {
+  background: #129D97; }
+
+div.toggle.clicked label.tgl-dbro {
+  background: #AE5E0C; }
+
+div.toggle.clicked label.tgl-dblu {
+  background: #4C59B6; }
+
+.toggled {
+  opacity: 1; }
+
+circle.toggled.purp {
+  fill: #8C2E60 !important; }
+
+circle.toggled.oran {
+  fill: #E84E00 !important; }
+
+circle.toggled.tgol {
+  fill: #CE8A00 !important; }
+
+circle.toggled.brow {
+  fill: #955008 !important; }
+
+circle.toggled.blue {
+  fill: #2F67A8 !important; }
+
+circle.toggled.lblu {
+  fill: #4E97BA !important; }
+
+circle.toggled.gree {
+  fill: #089576 !important; }
+
+circle.toggled.ttea {
+  fill: #129D97 !important; }
+
+circle.toggled.dbro {
+  fill: #AE5E0C !important; }
+
+circle.toggled.dblu {
+  fill: #4C59B6 !important; }

@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+@font-face {
+    font-family: MouseDeco;
+    src: url(css/Mouse_Deco.ttf);
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(css/Metropolis.otf);
+}
+
+@font-face {
+    font-family: Josefin;
+    src: url(css/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: JosefinBold;
+    src: url(css/JosefinSans-SemiBold.ttf);
+}
+
+body {
+    text-align: center;
+}
+
+#one{
+  background-color: #11141B;
+}
+
+.intro{
+  font-family: MouseDeco;
+  font-size: 18px;
+  color: white;
+}
+.container.nopadding{
+  padding-left: 0;
+  padding-right:0;
+  margin: auto;
+}
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.5;
+}
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+.title{
+    width: 100%;
+}
+.title {
+    display: inline-block;
+    height: 50px;
+    margin-top: 1rem;
+    font-family: MouseDeco;
+    font-size: 27px;
+    transform: translate(-1.6%);
+    color: white;
+}
+
+#title {
+  width: 40%;
+  margin-top: 10%;
+}
+
+#description {
+    font-family: Josefin;
+    font-size: 14px;
+    margin-top: 10px;
+    /*margin-left: 30px;
+    margin-right: 30px;*/
+    text-align: justify;
+    color: white;
+}
+.subtitle {
+    font-family: Josefin;
+    font-size: 9px;
+    margin-top: 50px;
+    margin-bottom: 2px;
+    /*transform: translate(-1.6%);*/
+}
+.a {
+    text-transform: uppercase;
+    margin-left:10px;
+    /*font-size: 9px;*/
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 2px 5px;
+    color: #DEAD27;
+}
+.b {
+    text-transform: uppercase;
+    margin-left:10px;
+    /*font-size: 9px;*/
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #DEAD27;
+    border-radius: 3px;
+    cursor: help;
+    color: #DEAD27;
+}
+.c {
+    text-transform: uppercase;
+    margin-top:3px;
+    margin-left:10px;
+    /*font-size: 9px;*/
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #DEAD27;
+    border-radius: 3px;
+    cursor: help;
+    color: #DEAD27; 
+}
+.d {
+    text-transform: uppercase;
+    margin-left:10px;
+    /*font-size: 9px;*/
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #DEAD27;
+    border-radius: 3px;
+    opacity: 0.2;
+    color: #DEAD27;
+}
+.timeline {
+    margin-left: auto;
+    margin-right: auto;
+}
+.yearLabel {
+    font-family: Josefin;
+    font-size: 12px;
+}
+.labelText {
+    font-family: JosefinBold;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    
+}
+.sidebar1{
+    position: absolute;
+    left: 0;
+    padding-left: 0px;
+    background-color: #DEAD27;
+    
+}
+.sidebar2{
+   position: absolute;
+   right: 0;
+   padding-right: 0px;
+   background-color: #DEAD27;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: auto;
+  padding: 5px 5px;
+  font: 13px Josefin;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+#overlay1{
+		position: fixed;
+		top: 0px;
+		background: linear-gradient(to bottom right,rgba(0,47,75,0.6), rgba(220,66,37,0.6)), url("images/background1.png") no-repeat center; 
+		background-size: cover;
+		opacity: 1;
+}
+
+/*#overlay2 {
+  position: fixed;
+  background: black;
+  top: 0px;
+}
+#overlay2 video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /*min-width: 100%;*/
+    /*max-height: 100%;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*z-index: -100;*/
+    /*-ms-transform: translateX(-50%) translateY(-50%);*/
+    /*-moz-transform: translateX(-50%) translateY(-50%);*/
+    /*-webkit-transform: translateX(-50%) translateY(-50%);*/
+    /*transform: translateX(-50%) translateY(-50%);
+    /*background: url(preview.png) no-repeat;
+    /*background-size: cover; */
+
+.about {
+    margin-top: 37px;
+    font-family: MouseDeco;
+    font-size: 18px;
+    margin-left:15px;
+    /*font-size: 9px;*/
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #DEAD27;
+    border-radius: 2px;
+    color: #DEAD27;
+}
+
+.demo {
+    margin-top: 37px;
+    font-family: MouseDeco;
+    font-size: 18px;
+    margin-left:15px;
+    /*font-size: 9px;*/
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #DEAD27;
+    border-radius: 2px;
+    color: #DEAD27;
+}
+
+.enter {
+    margin-top: 37px;
+    font-family: MouseDeco;
+    font-size: 18px;
+    margin-left:15px;
+    /*font-size: 9px;*/
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #DEAD27;
+    border-radius: 2px;
+    color: #DEAD27;
+}
+
+.creator{
+  position: fixed; 
+  bottom: 0; 
+  width:100%; 
+  text-align: center;
+  font-family: Josefin;
+  font-size: 10px;
+  color: white;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+  background-color: #DEAD27;/*#812D1D;*/
+}
+
+
+</style>
+<section id=one>
+<div class="container nopadding">
+  <div class="row">
+      <div class = "col-lg-1 col-md-1 col-xs-1" id="sidebar1">
+      </div>
+      <div class="col-lg-10 col-md-10 col-xs-10">
+        <svg height="17"></svg>
+      </div>
+      <div class = "col-lg-1 col-md-1 col-xs-1" id="sidebar2">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+          <div class="title">
+              The International Afterlife of Broadway Musicals
+              <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1" id="description">
+                Follow Broadway musical titles through their lifetimes, their Broadway performances, international productions and touring across continents to explore the dynamics of cultural transmission and the motivation behind this global distribution.
+              </div>
+          </div>
+      </div>
+  </div>
+   <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1 subtitle" id="subtitle">
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-xs-12"> 
+            <div class="visualization" id="visualization">
+            </div>
+    </div>
+  </div>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <img id="legend1" src="images/legend1.png" style='width: 100%'></img>
+      <img id="legend2" src="images/legend2.png" style='width: 70%' display="none"></img>
+    </div>
+  </footer>
+</div>
+</section>
+<div id='overlay1' class='col-lg-12 col-md-12 col-xs-12' style='height: 100%'>
+    <img id="title" src="images/title.png"></img>
+    <p></p>
+    <p class="intro"> 40 theatres, 12 blocks, 1 city......</p>
+    <p class="intro"> Does the life of a Broadway musical end here?</p>
+    <div class="about"><a href="https://nancyzhao888.github.io/thesis/work/broadway/video/Wicked.mp4">About</a></div>
+    <div class="demo"><a href="https://nancyzhao888.github.io/thesis/work/broadway/video/presentation.mp4">Demo</a></div>
+    <div class="enter">Explore</div>
+    <p class="creator"> By NANCY ZHAO </p>
+</div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+<script>
+//EFE0E4
+var margin = {
+    top: 20,
+    right: 100,
+    bottom: 100,
+    left: 100
+};
+
+//var height = 640;
+var width = document.getElementById("visualization").offsetWidth;
+var newHeight = window.innerHeight;
+
+var svgLegend = d3.select("#footer")
+            .append("svg")
+            .attr("class", "legend")
+            .attr("width", "100%");
+  
+var svgSideL = d3.select("#sidebar1")
+            .append("svg")
+            .attr("class", "sidebar1")
+            .attr("width", 10)
+            .attr("height", 130)
+            
+var svgSideR = d3.select("#sidebar2")
+            .append("svg")
+            .attr("class", "sidebar2")
+            .attr("width", 10)
+            .attr("height", 130)
+            
+var svg = d3.select("#visualization")
+            .append("svg")
+            .attr("class", "svg_01")
+            .attr("width", "100%") //vWidth + 100
+            .attr("height", newHeight + 20);
+
+var svgInfo = d3.select("#visualization")
+    .append("svg")
+    .attr("width", "20%")
+    .attr("height", window.innerHeight + 250)
+    .style('display','none')
+    //.style("margin-left", margin.left + "px")
+    //.style("margin-right", margin.right + "px")
+    .attr("class", "svg_03");  
+    
+var svgTime = d3.select("#visualization")
+    .append("svg")
+    .attr("width", "80%")
+    .attr("height",window.innerHeight + 250)
+    .style('display','none')
+    //.style("margin-left", margin.left + "px")
+    //.style("margin-right", margin.right + "px")
+    .attr("class", "svg_02");
+
+var div = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+    
+var graph, graphOrig;
+
+var color= d3.scaleOrdinal()
+            .range(['#D4AF37','#AC1145','#601205', '#DF4F4A','#AB0021','#CD2521','#EF6036', '#FDA458','#FEC672','#FFEDA0', '#E9F6E1', '#D4EE9F', '#A0D9A3', '#56ADAE', '#C1E4EF', '#8BC1DD','#71A8D1', '#4C7AB9', '#3E5EAC','#313699', '#5758A6', '#868569', '#617983', '#C6551C', '#AD9760', '#B1D13A']);
+
+var simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(210))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter(width/2, (newHeight-160)/2));
+
+// d3.select("#myVideo").on("click", closeYou)
+    
+//     function closeYou(){
+//       d3.select('#overlay2').style("display", 'none');
+//     }
+function simulation_init(n,l,link,node){
+        
+
+   simulation
+      .nodes(n)
+      .on("tick", ticked);
+    
+  simulation.force("link")
+      .links(l);
+      
+  function ticked(e) {
+    link
+        .attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+    node
+        .attr("cx", function(d) { 
+          return d.x
+          // if(d.n < 60) {
+          // var angle = ((d.n-2) / (42/2)) * Math.PI; // Calculate the angle at which the element will be placed.
+          // var x = (200 * Math.cos(angle)) + (width/2);
+          // return d.x = x;
+          // }
+          // else return d.x;
+        })
+        .attr("cy", function(d) {
+          return d.y;
+          // if(d.n < 60) {
+          // var angle = ((d.n-2) / (42/2)) * Math.PI; // Calculate the angle at which the element will be placed.
+          // var y = (200 * Math.sin(angle)) + (height/2);
+          // return d.y = y;
+          // }
+          // else return d.y;
+        });
+  }
+  simulation.alpha(1).restart();
+
+}
+
+var drawNodesLinks = function(error, _graph){
+    
+    if (error) throw error;
+      graphOrig = graphOrig || _graph;
+      graph = JSON.parse(JSON.stringify(graphOrig));
+    
+    simulation = d3.forceSimulation()
+      .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(210))
+      .force("charge", d3.forceManyBody())
+      .force("center", d3.forceCenter(width/2, (newHeight-160)/2));
+      
+    var link = svg.append("g")
+        .attr("class", "links")
+        .selectAll("line")
+        .data(graph.links)
+        .enter().append("line")
+        .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+    
+  //   var nodeElement = svg.selectAll(".node")
+  //       .data(graph.nodes)
+  //       .enter().append("g")
+  //       .attr("class", "nodeLayer");
+
+  // var node = nodeElement.append("circle")
+  //       .attr("class", "nodes")
+  //       .attr("r", function(d){
+  //         if (d.n<11) {
+  //           return 7
+  //         } else {
+  //           return 5.5
+  //         }
+  //       })
+  //       .attr("fill", function(d) { return color(d.country); })
+  //       .style("stroke", "#fff")
+  //       .style("stroke-width", 0.75)
+  //       .on("mouseover",fade(0.1))
+  //       .on("mouseout", fade(1))
+  //       .on('click', clicked);
+    
+    var node = svg.append("g")
+        .attr("class", "nodes")
+        .selectAll("circle")
+        .data(graph.nodes)
+        .enter().append("circle")
+        .attr("r", function(d){
+          if (d.n<11) {
+            return 8
+          } else {
+            return 5.5
+          }
+        })
+        .attr("fill", function(d) { return color(d.country); })
+        .on("mouseover", fade(0.1))
+        .on("mouseout", fade(1))
+        .on('click', clicked);
+    
+    
+    simulation_init(graph.nodes,graph.links,link,node)
+    
+    function neighboring(a, b) {
+      return graph.links.some(function(d) {
+        return (d.source === a && d.target === b)
+        || (d.source === b && d.target === a);
+      });
+    }
+    
+    function fade(opacity) {
+      return function(d) {
+        link.style("opacity", function(o) {
+        return o.source === d || o.target === d ? 1 : opacity;
+        });
+        node.style("opacity", function(o) {
+          if(o==d){
+            return 1;
+          } else {
+            return neighboring(d, o) ? 1 : opacity;  
+          }
+        })
+      }
+    }
+  
+    
+    d3.select(".enter").on("click", closeMe)
+    
+    function closeMe(){
+      d3.select('#overlay1').style("display", 'none');
+    }
+        
+    // graph.links.forEach(function(d){
+    //   d.source_name = d.source;
+    //   //console.log(d.source)
+    // })
+    
+    function clicked(d){
+      
+      d3.select('.svg_01').style('display','none');
+      d3.select('.svg_03').style('display','inline');
+      d3.select('.svg_02').style('display','inline');
+      d3.select('#legend1').style('display','none');
+      d3.select('#legend2').style('display','inline');
+      d3.selectAll(".a").style('display','none');
+      d3.selectAll(".b").style('display','none');
+      d3.selectAll(".d").style('display','none');
+      // d3.selectAll(".b")
+      //     .style("opacity", 0.1)
+      
+      var b1pt = d3.select("#subtitle")
+      .append("div")
+      .attr("class", "back");
+      
+      b1pt.html("<div class='c'>Back</div>")
+      .on("click", back)
+      
+      
+      var name = d.id
+        //console.log(name)
+      
+      var band_arr = _.where(graph.nodes,{"id": name});
+        //console.log(band_arr)
+      var band_children_arr = [];
+      band_arr.forEach(function(d){
+        d["children"].forEach(function(di){
+            band_children_arr.push(di)
+        })
+      })
+        
+        
+      var final_feed_band_arr = _.groupBy(band_children_arr,"year");
+      var final_band_arr = [];
+      var obj_keys = Object.keys(final_feed_band_arr);
+        obj_keys.forEach(function(d){
+          final_band_arr.push(final_feed_band_arr[d]);
+        });
+      //console.log(final_band_arr);
+      var count = 40
+        
+      var band = svgTime.selectAll("g")
+          .data(final_band_arr)
+          .enter()
+          .append("g")
+          .attr('class', 'timeline')
+          .attr("transform", function(d,i,whole) { 
+            //console.log(final_band_arr[i]);
+           if (i == 0) {
+              return "translate(40," + 40 + ")"; } 
+              else { 
+                count = count + final_band_arr[i-1].length*9 + 20
+                console.log(count)
+                return "translate(40," + count + ")"
+              }
+            })
+          // .style('fill', "#FEFEFA")
+          .attr('class',function(d){
+            //console.log(d)
+            return name + "_"  + d[0].year;
+          })
+          
+          band.append("text")
+              .attr("x", 0)
+              .attr("y", 5)
+              .attr("dy", ".30em")
+              .text(function(d, i) { 
+                //console.log(d[0].year)
+                return d[0].year; })
+              .attr('class', 'yearLabel')
+              .style('fill', 'white');
+              
+          band.append("line")
+              .attr("x1", 40)  //<<== change your code here
+              .attr("y1", 0)
+              .attr("x2", 40)  //<<== and here
+              .attr("y2", function(d) { return d.length * 9})
+              .style("stroke-width", 1)
+              .style("stroke", "white")
+              .style("fill", "none");
+            
+          obj_keys.forEach(function(d,i){
+            
+            d3.select("." + name + "_" + d)
+              .append('g')
+              .selectAll("rect")
+              .data(final_band_arr[i])
+              .enter()
+              .append('rect')
+              .attr("width", 606.6666666)
+              .attr("height", 9)
+              .style("fill", "#11191b")
+              .style("stroke", '#11141B')
+              .attr('rx', 5)
+              .attr('ry', 5)
+              .attr('transform', function(d, k){
+                if (final_band_arr[i].length>1) {
+                  return "translate(60," + (k * 9) + ")"; 
+              } else return "translate(60," + "0" + ")";})
+            
+            d3.select("." + name + "_" + d)
+              .append('g')
+              .selectAll("rect")
+              .data(final_band_arr[i])
+              .enter()
+              .append('rect')
+              .attr('width',function(d){
+                return ((new Date(d.end) - new Date(d.start))  /  (3600*24 * 600));
+              })
+              .attr('height', 9)
+                //console.log(d)
+                //console.log(k)
+                //if (final_band_arr[i].length>1) {
+                  //if(Math.max(final_band_arr[i][k]["start"], final_band_arr[i][k+1]["start"]) < Math.min(final_band_arr[i][k]["end"], final_band_arr[i][k+1]["end"])) {
+                  //return 10;//5/(final_band_arr[i].length);
+                  //} else return 10;
+              //})
+              .attr('transform', function(d, k){
+                if (final_band_arr[i].length>1) {
+                  return "translate(60," + (k * 9) + ")"; 
+              } else return "translate(60," + "0" + ")";})
+              .attr('x',function(d){
+                // return dateScale(new Date(d.start))
+                return (new Date(d.start) - new Date(d.year + '-01-01'))   /  (3600*24 * 600)
+              })
+              .style('fill', function(d){
+                if (d.version == "Broadway") {
+                  return "#E5BD52"
+                } else if (d.version == "English") {
+                  return "#812D1D"
+                } else if (d.version == "Local") {
+                  return "#CBA9A2"
+                } else if (d.version == "West End") {
+                  return "#EED591"
+                }
+              })
+              .style('stroke', 'black')
+              .attr("class", "rect")
+              .attr('rx', 5)
+              .attr('ry', 5)
+              .on("mouseover", function(d) {
+                 div.transition()
+                   .duration(200)
+                   .style("opacity", .9);
+                 div.html("City: " + d.location + "<br/>" + "Start: " + d.start + "<br/>" + "End: " + d.end )
+                   .style("left", (d3.event.pageX) + "px")
+                   .style("top", (d3.event.pageY - 28) + "px")
+                    .style("background", function(){
+                      if (d.version == "Broadway") {
+                        return "#E5BD52";
+                      } else if (d.version == "English") {
+                        return "#9d4939";
+                      } else if (d.version == "Local") {
+                        return "#CBA9A2";
+                      } else if (d.version == "West End") {
+                        return "#EED591";
+                      }
+                  });
+              })
+              .on("mouseout", function(d) {
+                 div.transition()
+                   .duration(500)
+                   .style("opacity", 0);
+              });
+          })
+    
+    var show = svgInfo.append('g')
+          .attr('class','image');
+        
+        show.append('circle')
+          .attr("cx", 120)
+          .attr("cy", 100)
+          .attr("r", 55)
+          .style("fill", "#DEAD27")
+          
+        show.append('image')
+          .attr("xlink:href", ("images/"+ name +".png"))
+          .attr("x", 70)
+          .attr("y", 50)
+          .attr("height", 100)
+          .attr("width", 100)
+        
+        show.append("text")
+            .attr("x", 120)
+            .attr("y", 190)
+            .text(name)
+            .style("font-family", "MouseDeco")
+            .style("font-size", "17px")
+            .style("fill", "white")
+            .attr("text-anchor", "middle");
+            //.style("text-transform", "uppercase");
+      
+      function back(d) {
+        b1pt.style("display", "none");
+        d3.selectAll(".a").style('display','inline');
+        d3.selectAll(".b").style('display','inline');
+        d3.selectAll(".d").style('display','inline');
+        d3.select('.svg_01').style('display','inline');
+        d3.select('.svg_03')
+          .style('display','none')
+          .selectAll("*").remove();;
+        d3.select('.svg_02').style('display','none').selectAll("*").remove();;
+        d3.select('#legend1').style('display','inline');
+        d3.select('#legend2').style('display','none');
+        
+      }
+            
+    }
+        
+    node.append("title")
+        .text(function(d) { return d.id; });
+           
+    
+    d3.select("#subtitle")
+      .style("padding-left", margin.left + "px")
+      .style("padding-right", margin.right + "px");
+      
+    var bOpt = d3.select("#subtitle")
+      .append("div")
+      .attr("class", "filter");
+    
+    bOpt.html("<div class='a' id ='Group'>Group by</div><div class='b' id ='Adapt'>Source Material</div><div class='b' id='Genre'>Type</div><div class='b' id= 'Tonys'>Tony Awards</div><div class='b' id='Gender'>Gender of Lead</div><div class='d' id='reset'>Reset</div>");
+    
+    d3.select('#Tonys')
+      .on("click", clusterbyTonys)
+      .on("mouseover", function(d) {
+             div.transition()
+               .duration(200)
+               .style("opacity", .9);
+             div.html("Do the Tony Awards matter? Aside from prestige and a shiny trophy, does Tony Award help a musical title gain more overseas presence?")
+               .style("left", (d3.event.pageX) + "px")
+               .style("top", (d3.event.pageY - 28) + "px")
+               .style("background", "#CBA9A2");
+          })
+         .on("mouseout", function(d) {
+             div.transition()
+               .duration(500)
+               .style("opacity", 0);
+          });
+    
+    function clusterbyTonys() {
+        
+        link
+            .attr("x1", function(d) { return d.source.x; })
+            .attr("y1", function(d) { return d.source.y; })
+            .attr("x2", function(d) { return d.target.x; })
+            .attr("y2", function(d) { return d.target.y; });
+      
+    
+        node
+            .attr("cx", function(d) { 
+              if(d.n > 10) {
+              // var angle = ((d.n-2) / (42/2)) * Math.PI; // Calculate the angle at which the element will be placed.
+              // var x = (200 * Math.cos(angle)) + (width/2);
+              //return d.x = x;
+              }
+              else if(d.tony == "1") {
+                d.x -= 2 * 210;
+              }else {
+                d.x += 2 * 210;
+              }
+              return d.x;
+            })
+            .attr("cy", function(d) { 
+              // return d.y
+              // if(d.n >10) {
+              // var angle = ((d.n-2) / (42/2)) * Math.PI; // Calculate the angle at which the element will be placed.
+              // var y = (200 * Math.sin(angle)) + (height/2);
+              // return d.y = y;
+              // }
+              // else 
+              //return d.y += i & 1 ? k : -k
+              return d.y;
+            });
+        
+        d3.selectAll(".b")
+          .style("opacity", 0.1)
+        
+        d3.select(".d")
+          .style("opacity", 1)
+          
+        
+        var labelL = d3.select(".sidebar1").append("g")
+              
+        labelL.append("circle")
+              .attr("cx", 5)
+              .attr("cy", window.innerHeight/2 + 50)
+              .attr("r", 4)
+              .attr("class", "labelCircle")
+              .style("fill", "none")
+              .style("stroke", "white")
+              .style("stroke-width", 2)
+                  
+        svg.append("text")
+            .attr("x",5)
+            .attr("y", window.innerHeight/2 - 75)
+            .text("Tony Award-winning")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline");
+        
+        var labelR = d3.select(".sidebar2").append("g")
+              
+        labelR.selectAll("circle")
+              .append("circle")
+              .attr("cx", 5)
+              .attr("cy", function() {
+                for (i=0; i<75; i++) {
+                  return i+10
+                }
+              })
+              .attr("r", 4)
+              .attr("class", "labelCircle")
+              .style("fill", "none")
+              .style("stroke", "white")
+              .style("stroke-width", 2)
+                  
+        svg.append("text")
+            .attr("x",width-130)
+            .attr("y", window.innerHeight/2 - 75)
+            .text("No Tony Awards")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline")
+            .attr("text-anchor", "right");
+        
+        simulation_init(graph.nodes,graph.links,link,node)
+    }
+    
+    d3.select('#Gender')
+      .on("click", clusterbyGender)
+      .on("mouseover", function(d) {
+             div.transition()
+               .duration(200)
+               .style("opacity", .9);
+             div.html("As a highly discussed issue in TV & Film, gender diversity in theatrical works is less examined. Are there trends for strong female-leading, strong male-leading, or mixed cast? ")
+               .style("left", (d3.event.pageX) + "px")
+               .style("top", (d3.event.pageY - 28) + "px")
+               .style("background", "#CBA9A2");
+          })
+         .on("mouseout", function(d) {
+             div.transition()
+               .duration(500)
+               .style("opacity", 0);
+          });
+      
+    function clusterbyGender() {
+        
+        link
+            .attr("x1", function(d) { return d.source.x; })
+            .attr("y1", function(d) { return d.source.y; })
+            .attr("x2", function(d) { return d.target.x; })
+            .attr("y2", function(d) { return d.target.y; });
+      
+    
+        node
+            .attr("cx", function(d) { 
+              if(d.n > 10) {
+              // var angle = ((d.n-2) / (42/2)) * Math.PI; // Calculate the angle at which the element will be placed.
+              // var x = (200 * Math.cos(angle)) + (width/2);
+              //return d.x;
+              }
+              else if(d.lead == "1") {
+                d.x -= 2 * 210;
+              }else {
+                d.x += 2 * 210;
+              }
+              return d.x;
+            })
+            .attr("cy", function(d) { 
+              // return d.y
+              // if(d.n >10) {
+              // var angle = ((d.n-2) / (42/2)) * Math.PI; // Calculate the angle at which the element will be placed.
+              // var y = (200 * Math.sin(angle)) + (height/2);
+              // return d.y = y;
+              // }
+              // else 
+              //return d.y += i & 1 ? k : -k
+              return d.y;
+            });
+        
+        d3.selectAll(".b")
+          .style("opacity", 0.1)
+        
+        d3.select(".d")
+          .style("opacity", 1)
+          
+        
+        var labelL = d3.select(".sidebar1").append("g")
+              
+        labelL.append("circle")
+              .attr("cx", 5)
+              .attr("cy", window.innerHeight/2 + 50)
+              .attr("r", 4)
+              .attr("class", "labelCircle")
+              .style("fill", "none")
+              .style("stroke", "white")
+              .style("stroke-width", 2)
+                  
+        svg.append("text")
+            .attr("x",5)
+            .attr("y", window.innerHeight/2 - 75)
+            .text("Strong Female Lead")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline");
+        
+        var labelR = d3.select(".sidebar2").append("g")
+              
+        labelR.selectAll("circle")
+              .append("circle")
+              .attr("cx", 5)
+              .attr("cy", function() {
+                for (i=0; i<75; i++) {
+                  return i+10
+                }
+              })
+              .attr("r", 4)
+              .attr("class", "labelCircle")
+              .style("fill", "none")
+              .style("stroke", "white")
+              .style("stroke-width", 2)
+                  
+        svg.append("text")
+            .attr("x",width-155)
+            .attr("y", window.innerHeight/2 - 75)
+            .text("Mixed Leading Cast")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline")
+            .attr("text-anchor", "right")
+            .on("mouseover", function(d) {
+               div.transition()
+                 .duration(200)
+                 .style("opacity", .9);
+               div.html("......")
+                 .style("left", (d3.event.pageX) + "px")
+                 .style("top", (d3.event.pageY - 28) + "px");
+            })
+           .on("mouseout", function(d) {
+               div.transition()
+                 .duration(500)
+                 .style("opacity", 0);
+            });
+        
+        simulation_init(graph.nodes,graph.links,link,node)
+    }
+    
+    d3.select('#Adapt')
+      .on("click", clusterbySource)
+      .on("mouseover", function(d) {
+             div.transition()
+               .duration(200)
+               .style("opacity", .9);
+             div.html("Literature, movie, and popular music catalogs are favorable sources for authors and composers. Does readily available source material combined with instant name recognition for a large potential audience equal bigger impact?")
+               .style("left", (d3.event.pageX) + "px")
+               .style("top", (d3.event.pageY - 28) + "px")
+               .style("background", "#CBA9A2");
+          })
+         .on("mouseout", function(d) {
+             div.transition()
+               .duration(500)
+               .style("opacity", 0);
+          });
+      
+    function clusterbySource() {
+        
+        link
+            .attr("x1", function(d) { return d.source.x; })
+            .attr("y1", function(d) { return d.source.y; })
+            .attr("x2", function(d) { return d.target.x; })
+            .attr("y2", function(d) { return d.target.y; });
+      
+    
+        node
+            .attr("cx", function(d) { 
+              if(d.n > 10) {
+              }
+              else if(d.sourceIP == "Movie") {
+                d.x -= 2.5 * 210;
+              } else {
+                d.x += 2.5 * 210;
+              }
+              return d.x;
+            })
+            .attr("cy", function(d) { 
+              if(d.n > 10) {
+              }
+              else if(d.sourceIP == "Movie") {
+                d.y -= 2 * 100;
+              } else {
+                d.y += 2 * 100;
+              }
+              return d.y;
+            });
+        
+        d3.selectAll(".b")
+          .style("opacity", 0.1)
+        
+        d3.select(".d")
+          .style("opacity", 1)
+          
+        
+        var labelL = d3.select(".sidebar1").append("g")
+              
+        labelL.append("circle")
+              .attr("cx", 5)
+              .attr("cy", window.innerHeight/2 + 50)
+              .attr("r", 4)
+              .attr("class", "labelCircle")
+              .style("fill", "none")
+              .style("stroke", "white")
+              .style("stroke-width", 2)
+                  
+        svg.append("text")
+            .attr("x",5)
+            .attr("y", window.innerHeight/2 - 75)
+            .text("Movie")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline");
+        
+        var labelR = d3.select(".sidebar2").append("g")
+              
+        labelR.selectAll("circle")
+              .append("circle")
+              .attr("cx", 5)
+              .attr("cy", function() {
+                for (i=0; i<75; i++) {
+                  return i+10
+                }
+              })
+              .attr("r", 4)
+              .attr("class", "labelCircle")
+              .style("fill", "none")
+              .style("stroke", "white")
+              .style("stroke-width", 2)
+                  
+        svg.append("text")
+            .attr("x",width-125)
+            .attr("y", window.innerHeight/2 - 250)
+            .text("Book")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline")
+            .attr("text-anchor", "right");
+        
+        svg.append("text")
+            .attr("x",width-125)
+            .attr("y", window.innerHeight/2 + 110)
+            .text("Music Catalog")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline")
+            .attr("text-anchor", "right");
+        
+        simulation_init(graph.nodes,graph.links,link,node)
+    }
+
+    d3.select('#Genre')
+      .on("click", clusterbyGenre)
+      .on("mouseover", function(d) {
+             div.transition()
+               .duration(200)
+               .style("opacity", .9);
+             div.html("Musicals embody stories that range widely from love, to fairy tales, to autobiographies, to historical events. Four top type of musical titles are examined in this project.")
+               .style("left", (d3.event.pageX) + "px")
+               .style("top", (d3.event.pageY - 28) + "px")
+               .style("background", "#CBA9A2");
+          })
+         .on("mouseout", function(d) {
+             div.transition()
+               .duration(500)
+               .style("opacity", 0);
+          });
+      
+    function clusterbyGenre() {
+        
+        link
+            .attr("x1", function(d) { return d.source.x; })
+            .attr("y1", function(d) { return d.source.y; })
+            .attr("x2", function(d) { return d.target.x; })
+            .attr("y2", function(d) { return d.target.y; });
+      
+    
+        node
+            .attr("cx", function(d) { 
+              if(d.n > 10) {
+              }
+              else if(d.type == "Family-oriented" || d.type== "Comedy") {
+                d.x -= 2.5 * 210;
+              } else if(d.type == "Romantic Drama" || d.type== "Biopic"){
+                d.x += 2.5 * 210;
+              }
+              return d.x;
+            })
+            .attr("cy", function(d) { 
+              if(d.n > 10) {
+              }
+              else if(d.type == "Family-oriented" || d.type == "Romantic Drama" ) {
+                d.y -= 2.5 * 100;
+              } else if (d.type== "Comedy" || d.type== "Biopic"){
+                d.y += 2.5 * 100;
+              }
+              return d.y;
+            });
+        
+        d3.selectAll(".b")
+          .style("opacity", 0.1)
+        
+        d3.select(".d")
+          .style("opacity", 1)
+          
+        
+        var labelL = d3.select(".sidebar1").append("g")
+              
+        labelL.append("circle")
+              .attr("cx", 5)
+              .attr("cy", window.innerHeight/2 + 50)
+              .attr("r", 4)
+              .attr("class", "labelCircle")
+              .style("fill", "none")
+              .style("stroke", "white")
+              .style("stroke-width", 2)
+                  
+        svg.append("text")
+            .attr("x",5)
+            .attr("y", window.innerHeight/2 - 230)
+            .text("Family-oriented")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline");
+        
+        svg.append("text")
+            .attr("x",5)
+            .attr("y", window.innerHeight/2 + 200)
+            .text("Comedy")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline");
+        
+        var labelR = d3.select(".sidebar2").append("g")
+              
+        labelR.selectAll("circle")
+              .append("circle")
+              .attr("cx", 5)
+              .attr("cy", function() {
+                for (i=0; i<75; i++) {
+                  return i+10
+                }
+              })
+              .attr("r", 4)
+              .attr("class", "labelCircle")
+              .style("fill", "none")
+              .style("stroke", "white")
+              .style("stroke-width", 2)
+                  
+        svg.append("text")
+            .attr("x",width-135)
+            .attr("y", window.innerHeight/2 - 230)
+            .text("Romantic Drama")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline")
+            .attr("text-anchor", "right");
+        
+        svg.append("text")
+            .attr("x",width-135)
+            .attr("y", window.innerHeight/2 + 200)
+            .text("Biopic")
+            .attr("class", "labelText")
+            .style("fill", "#DEAD27")
+            .style("text-decoration","underline")
+            .attr("text-anchor", "right");
+        
+        simulation_init(graph.nodes,graph.links,link,node)
+    }
+    
+        d3.select('#reset')
+        .on("click", function(){
+          
+          d3.selectAll(".labelCircle").remove();
+          d3.selectAll(".labelText").remove();
+          d3.selectAll(".a").remove();
+          d3.selectAll(".b").remove();
+          d3.selectAll(".d").remove();
+          d3.select(".links").remove();
+          d3.select(".nodes").remove();
+          drawNodesLinks();
+        
+        });
+}
+
+d3.json("showMatilda.json", drawNodesLinks);
+
+</script>

@@ -1,0 +1,30 @@
+{
+  "name": "thesis-dev",
+  "version": "1.0.0",
+  "description": "thesis dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agaase/thesis-dev.git"
+  },
+  "dependencies": {
+    "cors": "2.7.1",
+    "express": "~4.9.x",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "request": "^2.81.0"
+  },
+  "author": "agaase",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agaase/thesis-dev/issues"
+  },
+  "homepage": "https://github.com/agaase/thesis-dev#readme"
+}

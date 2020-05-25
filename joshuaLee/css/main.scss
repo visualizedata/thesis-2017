@@ -1,0 +1,218 @@
+// cd to client folder
+// sass --watch --style expanded css/main.scss:css/main.css (change style to minifed in the future)
+
+// Definings
+@import "_variables.scss";
+@import "_mixins.scss";
+
+// Global Styles
+@import "_global.scss";
+ 
+#container {
+    position: relative;
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#header-strip {
+    width: 100%;
+    // height: 100px;
+    background-color: #333;
+}
+
+#header {
+    // @include margins;
+    
+    background-color: #333;
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 30px;
+    height: 179px;
+    // display: inline;
+    // float: left;
+    
+    // background: orange;    
+    // height: 130px;
+    // border-top: 3px solid black;
+    
+    // div {
+    //     @include header-columns;
+    // }
+    
+    #headline {
+        // @include headline-style;
+        // margin-bottom: 10px;
+        // height: 100%;
+        width: 480px;
+        float: left;        
+        // display: inline;
+    }
+    
+    #intro {
+        color: #999;
+        // margin-top: 5px;
+        width: 480px;
+        float: left;
+        // display: inline;
+        // margin-bottom: 10px;
+        // margin-top: 2px;
+    }
+    
+    .title-img {
+        margin-bottom: 29px;
+    }
+}
+
+#nav {
+    // border-top: 3px solid black;
+    // padding-top: 10px;
+    // width: 50%;
+    // margin-top: 20px;
+    // margin-bottom: 0px;
+    // bottom: 0;
+}
+
+.btn {
+    border: 0px;
+    background-color: #757575;
+    padding: 7px 12px 8px 12px;
+    color: #eeeeee;
+    font-family: $default-font;
+    font-size: $default-font-size;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #424242;
+}    
+
+#main {
+    
+    .section {
+        @include margins;
+        position: relative;
+        margin-top: 31px;
+        // overflow:hidden;
+        // background: lightgray;
+        // height: 120px;
+    }    
+
+    .title {
+        @include section-title-style;
+        border-top: 3px solid black;
+    }   
+    
+    .player-name {
+        @include player-title-style;
+        border-top: 1px solid gray;
+        display: block;
+        clear: left;
+        margin-top: 30px;
+        padding-top: 3px;
+    }
+    
+    .graph-descriptor {
+        font-family: $monospace-font;
+        margin-top: 10px;
+        margin-bottom: 3px;
+        display: block;
+        clear: left;
+    }
+
+    .graph-descriptor.circle {
+        margin-top: 20px;
+        border-top: 1px dotted lightgray;
+        padding-top: 4px;
+        // margin-bottom: 30px;
+        margin-bottom: 15px;
+    }
+  
+    .week {
+        font-family: $monospace-font;
+        // margin-top: 10px;
+        margin-top: 5px;
+        // margin-bottom: 50px;
+        margin-bottom: 40px;
+    }  
+    
+    .mono-bold {
+        font-family: $monospace-font;
+        font-weight: 700;
+    }
+    .graph {
+        height: $bar-height;
+        // background-color: #e9e9e9;
+        background-color: #f4f4f4;        
+        display: block;
+        clear: left;
+        overflow: hidden;            
+    }
+    
+    // each unit on the graph
+    .graph .unit {
+        float: left;
+        height: $bar-height;
+        //   outline: solid thin;
+          /* Move the outline 10px away from the border */
+        //   outline-offset: 0px;
+        // border:1px solid black;
+        margin-left: 1px;
+        // background: linear-gradient(to right, #B71C1C, #E57373);
+        // border-radius: 3px;        
+    }
+    
+    .report {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        // width: 480px;
+        color: #999;
+        line-height: 1.4em;
+        letter-spacing: 0.02em;        
+    }
+    
+    #money,
+    #money .title, 
+    #money .player-name, 
+    #money-dates,
+    #money-dates .title, 
+    #money-dates .player-name {
+        color: #00897B;
+        border-color: #00897B;    
+    }
+
+    #messages,
+    #messages .title, 
+    #messages .player-name,
+    #messages-dates,
+    #messages-dates .title, 
+    #messages-dates .player-name {       
+        color: #0D47A1;
+        border-color: #0D47A1;    
+    }
+
+    #damage,
+    #damage .title, 
+    #damage .player-name,
+    #damage-dates,
+    #damage-dates .title, 
+    #damage-dates .player-name{
+        color: #EF5350;
+        border-color: #EF5350;  
+    } 
+    
+}
+
+.spacer {
+    height: 3px;
+}
+
+#footer {
+    margin-bottom: 100px;
+}
+
+.tippy-tooltip.aion-theme {
+    font-size: 1em;
+    font-family: $monospace-font;  
+}

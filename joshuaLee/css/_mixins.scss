@@ -1,0 +1,28 @@
+@mixin headline-style {
+    font-family: $default-font;
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+@mixin header-columns {
+    float: left;
+    // width: 50%;
+    width: 65%;
+}
+
+@mixin section-title-style {
+    // text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+@mixin player-title-style {
+    // text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@mixin margins {
+    margin-bottom: 20px;
+}

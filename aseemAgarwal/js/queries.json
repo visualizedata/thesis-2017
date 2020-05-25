@@ -1,0 +1,155 @@
+{
+	"tilesAvg" : {
+	  "size": 0, 
+	  "query": {
+	    "bool" :{
+	    	"must_not": [
+		      {
+		        "term": {
+		          "time": {
+		            "value": "6:30"
+		          }
+		        }
+		      }
+		    ]
+	    }
+	  },
+	   "aggs": {
+	     "tiles": {
+	       "terms": {
+	         "field": "tFr",
+	         "size": 600
+	       },
+	       "aggs" : {
+	         "avg_excessTime" : { "avg" : { "field": "ratio"}}
+	       }
+	     }
+	   }
+	},
+	"day" : {
+	  "size": 0, 
+	  "query": {
+	    "bool" :{
+	    	"must_not": [
+		      {
+		        "term": {
+		          "time": {
+		            "value": "6:30"
+		          }
+		        }
+		      }
+		    ]
+	    }
+	  },
+	  "aggs": {
+	    "bars": {
+	      "terms": {
+	        "field": "day",
+	        "size": 10
+	      },
+	      "aggs" : {
+	            "avg_excessTime" : { "avg" : { "field": "ratio"}}
+	      }
+	    }
+	  }
+	},
+	"dist" :{
+	  "size": 0, 
+	  "query": {
+	    "bool" :{
+	    	"must_not": [
+		      {
+		        "term": {
+		          "time": {
+		            "value": "6:30"
+		          }
+		        }
+		      }
+		    ]
+	    }
+	  },
+	  "aggs": {
+	    "bars": {
+	      "range": {
+	        "field": "dist",
+	         "ranges" : [
+	                    { "to" : 5000 },
+	                    { "from" : 5000, "to" : 10000 },
+	                    { "from" : 10000, "to" : 15000 },
+	                    { "from" : 15000, "to" : 20000 },
+	                    { "from" : 20000, "to" : 30000 },
+	                    { "from" : 30000 }
+	                ]
+	      },
+	      "aggs" : {
+	          "avg_excessTime" : { "avg" : { "field": "ratio"}}
+	      }
+	    }
+	  }
+	},
+	"time" : {
+	  "size": 0, 
+	  "query": {
+	    "bool" :{
+	    	"must_not": [
+		      {
+		        "term": {
+		          "time": {
+		            "value": "6:30"
+		          }
+		        }
+		      }
+		    ]
+	    }
+	  },
+	  "aggs": {
+	    "bars": {
+	      "terms": {
+	        "field": "time",
+	        "size": 10
+	      },
+	      "aggs" : {
+	            "avg_excessTime" : { "avg" : { "field": "ratio"}}
+	      }
+	    }
+	  }
+	},
+	"routes" :{
+	  "size": 0, 
+	  "query": {
+	    "bool": {
+	      "must": [
+	        {"range": {
+	          "dist": {
+	            "gt" : 5000,
+	            "lte": 10000
+	          }
+	        }}
+	      ], 
+	      "must_not": [
+	        {
+	          "term": {
+	            "time": {
+	              "value": "6:30"
+	            }
+	          }
+	        }
+	      ]
+	    }
+	  },
+	  "aggs": {
+	    "r": {
+	      "terms": {
+	        "field": "r",
+	        "size": 100000,
+	        "order": {
+	          "avg_excessTime": "desc"
+	        }
+	      },
+	      "aggs" : {
+	        "avg_excessTime" : { "avg" : { "field": "ratio"}}
+	      }
+	    }
+	  }
+	}
+}

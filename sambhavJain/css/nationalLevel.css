@@ -1,0 +1,192 @@
+	html {
+		/*min-height: 1000px;*/
+	}
+
+	#slider{
+		width: 490px;
+		/*margin-right: 2px;*/
+		margin-right: 10px;
+		margin-left: 5px;
+	}
+	
+	button:focus { outline:0 !important; }
+	
+	/*input[type='range']:focus::-webkit-slider-runnable-track {*/
+	/*	-webkit-appearance: none !important;*/
+	/*	-webkit-border-radius: 2px;*/
+		/*-webkit-box-shadow: inset 0 0 2px #333;*/
+	/*	background-color: rgb(194, 194, 194);*/
+	/*	height: 4px;*/
+	/*	width: 100%;*/
+		/*margin: 20px;*/
+		/*position: relative;
+		 left: 10%;*/
+
+	/*}*/
+
+	/*input[type='range']::-webkit-slider-thumb {*/
+	/*	-webkit-appearance: none !important;*/
+	/*	-webkit-border-radius: 15px;*/
+	/*	background-color: #2b2b2b;*/
+		/*background-image: -webkit-gradient(linear, left top, left bottom, from(#bbb), to(#888));*/
+		/*border: 1px solid #000;*/
+	/*	height: 15px;*/
+	/*	width: 15px;*/
+	/*}*/
+    
+    input:focus {outline:0;}
+    
+	body {
+	}
+	
+	#volsettings {
+	    
+	}
+	
+	.pathMinDuration:hover {
+	fill-opacity: .7;
+	/*stroke: #ef6b85;*/
+	/*z-index: 5;*/
+	/*stroke: #d7d7d7;*/
+	stroke-width: 1.5;
+}
+
+	.pathResRestrictions:hover {
+	fill-opacity: .7;
+	/*stroke: #ef6b85;*/
+	/*z-index: 5;*/
+	/*stroke: #d7d7d7;*/
+	stroke-width: 1.5;
+}
+
+	/*.axis path, .axis line {*/
+	/*	fill: none;*/
+		/*stroke: #000;*/
+	/*	shape-rendering: crispEdges;*/
+	/*}*/
+
+	.dot {
+		/*stroke: #000;*/
+		stroke-width: 1;
+	}
+
+	.dot:hover {
+		stroke: #d71037;
+		stroke-width: 3;
+	}
+
+	#range {
+		font: 15px sans-serif;
+		margin-right: 50px;
+	}
+
+	
+	li {
+		display: inline-block;
+	}
+
+	#play{
+		cursor: pointer;
+		margin-left: -40px;
+		margin-bottom: -15px;
+	}
+	
+    #nlTopBar {
+            /*position: absolute;*/
+            background-color: #2c2c2c;
+            /*z-index: 1; */
+            /*width: 100%;*/
+            top:0; bottom:0; left:0; right:0;
+        }
+    
+    #nlHeading {
+             color: #f6f6f4; font-family: 'Libre Baskerville', serif; margin-bottom: 0px; margin-top: 10px;
+        }
+    #nlSubHeading {
+             color: #f6f6f4; font-family: 'Libre Baskerville', serif; margin-bottom: 10px; margin-top: 0px;
+        }
+    #nlContext {
+            color: #f6f6f4; font-size: 73%; font-family: 'Libre Baskerville'; margin-top: 10px; margin-bottom: 10px;
+        }
+	
+	#nlMidBar{
+		/*margin-top: 4%;*/
+	}
+	
+	.tooltip {
+		background-color: white;
+		padding: 10px;
+	}
+	
+	#timelineSideText {
+		text-align: middle;
+		margin-top: 30%;
+		font-size: 150%;
+		/*margin-left: 40%;*/
+		color: #2b2b2b; 
+		font-family: 'Libre Baskerville', serif;
+	}
+	
+	#timelineSideTextHR {
+		
+		/*margin-left: 45%;	*/
+	}
+	
+	#span1{
+		color: #e82c51; 
+		font-size: 130%;
+		font-weight: bold;
+		font-family: 'Libre Baskerville', serif;
+	}
+	
+	#leftBar{
+		margin-top: 40%;
+		margin-left: 20%;
+		margin-right: 0px;
+	}
+	#minDuration {
+		margin-top: 50%;
+		font-size: 90%;
+	}
+	#resRestrictions{
+		margin-top: 20%;
+		font-size: 90%;
+	}
+	#timeline{
+		margin-top: 20%;
+		font-size: 90%;
+	}
+	#span3{
+		font-size: 70%;
+		color: gray;
+		font-style: italic;
+		margin: 0px;
+	}
+	#span4{
+		color: gray;
+		font-weight: bold;
+		font-size: 70%;
+	}
+	#statuteLink{
+		font-weight: bold;
+		font-size: 70%;	
+	}
+	#rightBar{
+		/*margin-right: 1%;*/
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#label{
+		margin-top: 2%;
+		font-family: 'Libre Baskerville', serif;
+		font-style: italic;
+		opacity: 0.8;
+	}
+	
+	#timelineSideTextHR{
+		font-family: 'Libre Baskerville', serif;
+	}
+	
+	p{
+		font-family: 'Libre Baskerville', serif;
+	}

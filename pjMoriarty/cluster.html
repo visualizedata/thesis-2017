@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>W9</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body bgcolor="#111112">
+
+    <ul>
+      <li><a href="index.html">w9 home</a></li>
+      <li><a href="origins.html">about</a></li>
+      <li><a class="active" href="cluster.html">big numbers</a></li>
+      <li><a href="map.html">view map</a></li>
+      <li><a href="demo.html">view demo</a></li>
+    </ul>
+
+    <div>
+    <h2>the sun is too big</h2>
+    <p class="blurb">Much of the challenge designing a meaningful visualization of the subject matter is born of the extreme range of proportional sizes and distances. While the below visualization demonstrates the extreme diffence in respective sizes, it does nothing to illustrate any meaningful information about their respective distances.</p>
+    <p class="blurb">Further, many efforts to meaningfully represent these distances do so by divorcing the user perspective from context.
+    </div>   
+    <div id="planets"></div>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="js/cluster.js"></script> 
+
+</body>
+</html>

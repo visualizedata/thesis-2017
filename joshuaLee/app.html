@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Visualizing Player Inteactions in Online Games</title>
+        
+        <!--CSS Dependencies-->
+        <link href='css/main.css' rel='stylesheet'>
+        <!--<link href='css/buttons.css' rel='stylesheet'>-->
+        
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+        
+        <!--JavaScript Dependencies-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js'></script>
+        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js'></script>
+        
+        
+        <script src='https://d3js.org/d3.v4.min.js'></script>
+        <!--<script src='libraries/zenzcroll-min.js'></script>-->
+        
+        <!--Tooltip Dependencies-->
+        <!--https://atomiks.github.io/tippyjs/-->
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@0.11.1/dist/tippy.css">    
+        <script src="https://unpkg.com/tippy.js@0.11.1/dist/tippy.min.js"></script>
+        <style>
+            div.tooltip {	
+                position: absolute;			
+                text-align: center;			
+                width: 60px;					
+                height: 28px;					
+                padding: 2px;				
+                font: 12px sans-serif;		
+                background: lightsteelblue;	
+                border: 0px;		
+                border-radius: 8px;			
+                pointer-events: none;			
+            }
+        </style>
+    </head>
+    <body>
+        <!--Header Strip-->
+        <div id='header-strip'>
+                
+            <div id='header'>
+                
+                <div id='headline'>
+                    
+                    <img class='title-img' src='images/title.svg' width='325px'>
+
+                    <div id='nav'>
+                        <button type="button" class="btn" name='money' onclick='bar()'>Explore by Aggregate</button>
+                        <button type="button" class="btn" name='messages' onclick='week()'>Explore by Days of Week</button>
+                    </div>
+                </div>
+                
+                <div id='intro'>
+                    Plato once said, "You can discover more about a person in an hour of play than in a year of conversation." 44% of the internet population plays some form of an online game, and in real terms that is about 700 million people across the world. What do people do in online games? Who do they meet and who do they talk to? What motivates them to become so invested in these shared virtual environments? This visualization investigates player interactions in the massively multiplayer online role-playing game (MMORPG) Aion. Three players were randomly assigned to have their gameplay interactions visualized through three critical lenses: in-game money transactions, private messages, and skills and damage.
+                </div>
+            </div> 
+            
+   
+                
+            <!--Header-->
+            <!--<div id='header'>-->
+            
+                <!--<div id='headline'>-->
+            <!--    <div id='headline'>-->
+            <!--       <img src='images/title.svg' width='325px'>-->
+                   
+            <!--    <div id='nav'>-->
+            <!--       <button type="button" class="btn" name='money' onclick='bar()'>Explore by Aggregate</button>-->
+            <!--       <button type="button" class="btn" name='messages' onclick='week()'>Explore by Days of Week</button>-->
+            <!--    </div>-->
+                   
+            <!--    </div>-->
+                 
+                <!--</div>-->
+            <!--    <div id='intro'>-->
+            <!--        Plato once said, "you can discover more about a person in an hour of play than in a year of conversation." 44% of the internet population plays some form of an online game. That is about 700 million people. What do people do in online games? what motivates them to become so invested in these shared virtual environments? This visualization investigates player interactions in the massively multiplayer online role-playing game (MMORPG) Aion. Three players were randomly assigned to have their gameplay interactions visualized through three critical lenses: in-game money transactions, private messages, and skills and damage. orem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a vestibulum ante. Nam iaculis ante nec tortor varius, quis dictum justo efficitur. Phasellus egestas blandit risus et facilisis. Proin faucibus sem vel feugiat sollicitudin. Quisque egestas ex in porttitor congue. Curabitur porta a ligula sit amet varius. Proin libero nulla, posuere sed dui at, blandit sagittis nibh. Sed quis vehicula odio. Nulla aliquet eleifend mi eget varius.-->
+            <!--    </div>-->
+                    
+                    <!--<button type="button" class="btn" name='money' onclick='bar()'>Explore by Aggregate</button>-->
+                    <!--<button type="button" class="btn" name='messages' onclick='week()'>Explore by Days of Week</button>-->
+            
+            <!--</div>-->
+                
+        </div>
+        
+        <!--Container-->
+        <div id='container'>
+            
+
+            <div id='section'>
+                <div class='title'></div>
+            </div>
+            
+            <!--Main Visualization-->
+
+            <div id='main'>
+            
+                
+
+            </div>
+
+        <!--Application-->
+        <script src='js/app.js'></script>
+            <div id='footer'></div>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Mapping Dada</title>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
+    <script src="js/awesomplete.js" async></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Chivo|Playfair+Display" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/toggler.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/awesomplete.css" />
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="loader"></div>
+    <div class="loadMessage">loading dataset...</div>
+
+    <div id="intro" style="opacity: 0">
+      <h1>How Dada Connects to History</h1>
+      <p>A visual exploration of the influence of the 20th century art movement, using Wikipedia’s link structure.</p>
+      <div class="button" id="explore" onclick="explore()">Explore</div>
+      <a href="https://github.com/rhoon/thesis/blob/master/writing/MappingDada_MSDV_Thesis_SPR2017.pdf" class="button" id="method" target="new">Methodology</a>
+    </div>
+
+    <div id="sidebar" class="bgdark">
+      <h1>Mapping Dada</h1>
+
+      <div id="nav">
+
+        <div class="searchBox">
+          <label for="search" class="label labelColor">Search:</label>
+          <input id="search" list="titleList" class="card" />
+          <datalist id="titleList"></datalist>
+        </div>
+
+
+        <div id="catBox">
+          <span class="label labelColor">Categories:</span>
+        </div>
+
+      </div>
+
+      <div id="route">
+        <img src="images/backArrow.svg" class="back" onclick="clearNodeClick()"/>
+        <div id="downArrow"></div>
+        <div id="row_d2"></div>
+        <div id="row_d1">
+          <div class="l clicker" onclick="lClick()"></div>
+          <div class="r clicker" onclick="rClick()"></div>
+        </div>
+        <div id="dest_dada">Dada</div>
+      </div>
+
+    </div>
+
+    <div id="chart">
+      <svg id="chartSVG" width="1300" height="1300"></svg>
+    </div>
+
+    <!-- D3 -->
+    <script src="js/chart.js"></script>
+    <script src="js/nodeClick.js"></script>
+
+  </body>
+
+</html>

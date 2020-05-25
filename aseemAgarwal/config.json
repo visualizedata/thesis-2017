@@ -1,0 +1,59 @@
+{
+	"esPort" : "9200",
+	"localUrl" : "http://localhost",
+	"keyMap" : {
+		"dist" : {
+			"*-5000.0" : "*-5kms",
+			"5000.0-10000.0" : "5-10kms",
+			"10000.0-15000.0" : "10-15kms",
+			"15000.0-20000.0" : "15-20kms",
+			"20000.0-30000.0" : "20-30kms",
+			"30000.0-*" : "30-*kms"
+		},
+		"time" : {
+			"6:30" : "5-8am",
+			"9:30" : "8-11am",
+			"13:30" : "11-4pm",
+			"17:30" : "4-7pm",
+			"20:45" : "7-11pm"
+		},
+		"day" : {
+			"1" : "Mon",
+			"2" : "Tue",
+			"3" : "Wed",
+			"4" : "Thu",
+			"5" : "Fri",
+			"6" : "Sat",
+			"0" : "Sun"
+		}
+	},
+	"colors" : {
+		"mainColor" : "#37474F",
+		"exceptionColor" : "#00465B",
+		"scale" : ["#FFFFF6","#4DF9FF" ,"#00798E"]
+	},
+	"codeParams" : {
+		"cutoffExcessTime" : 75,
+		"minExcessTime" : 20
+	},
+	"layers" : {
+		"roads" : {
+		  "major_road": {
+		  	"width" : 2,
+		  	"color" : "#BDBDBD"
+		  },
+		  "minor_road": {
+		  	"width" : 1,
+		  	"color" : "#E0E0E0"
+		  },
+		  "highway": {
+		  	"width" : 3,
+		  	"color" : "#9E9E9E"
+		  },
+		  "path" : {
+		  	"width" : 0.5,
+		  	"color" : "EFEBE9"
+		  }
+		}
+	}
+}
